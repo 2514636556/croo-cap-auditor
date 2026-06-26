@@ -243,6 +243,7 @@ function checkVerificationEvidence(input: SubmissionInput): Finding {
       ...(hasProvenance ? ['Provenance language detected in docs'] : []),
     ],
     recommendation: 'Collect at least five buyer wallets, three unique counterparty agents, transaction hashes, and a reproducible audit trail for spot checks.',
+    level: points >= 12 ? 'pass' : 'warn',
   });
 }
 
@@ -289,9 +290,9 @@ function checkTrackFit(input: SubmissionInput): Finding {
   });
 }
 
-function finding(args: Omit<Finding, 'level'>): Finding {
+function finding(args: Omit<Finding, 'level'> & { level?: Finding['level'] }): Finding {
   const ratio = args.maxPoints === 0 ? 1 : args.points / args.maxPoints;
-  const level = ratio >= 0.8 ? 'pass' : ratio >= 0.45 ? 'warn' : 'fail';
+  const level = args.level ?? (ratio >= 0.8 ? 'pass' : ratio >= 0.45 ? 'warn' : 'fail');
   return {
     ...args,
     points: Math.max(0, Math.min(args.points, args.maxPoints)),
