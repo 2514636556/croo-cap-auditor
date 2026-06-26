@@ -49,7 +49,10 @@ Replace after publishing: `https://github.com/YOUR_GITHUB_USERNAME/croo-cap-audi
 
 ## Demo Video
 
-Replace after recording: `https://youtu.be/REPLACE_WITH_DEMO`
+Use the generated demo asset after publishing the repository, or upload it to YouTube/Loom:
+
+- Local file: `media/cap-sentinel-demo.mp4`
+- Replace after publishing: `https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/croo-cap-auditor/main/media/cap-sentinel-demo.mp4`
 
 ## Agent Store Listing
 

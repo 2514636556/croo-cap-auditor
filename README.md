@@ -46,6 +46,12 @@ Run the same audit as JSON:
 npm run demo:json
 ```
 
+Generate the short demo video used for hackathon submission:
+
+```bash
+npm run demo:video
+```
+
 Audit your own payload:
 
 ```bash
@@ -127,6 +133,7 @@ npm run build
 
 - Agent Store listing draft: [docs/service-listing.md](docs/service-listing.md)
 - DoraHacks submission draft: [docs/dorahacks-submission.md](docs/dorahacks-submission.md)
+- Demo video asset: [media/cap-sentinel-demo.mp4](media/cap-sentinel-demo.mp4)
 
 ## License
 
