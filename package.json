@@ -12,6 +12,7 @@
     "dev": "tsx src/cli.ts",
     "demo": "tsx src/cli.ts audit --input examples/sample-submission.json --format markdown",
     "demo:json": "tsx src/cli.ts audit --input examples/sample-submission.json --format json",
+    "demo:logo": "node scripts/make-logo.mjs",
     "demo:video": "node scripts/make-demo-video.mjs",
     "provider": "tsx src/provider.ts",
     "build": "tsc -p tsconfig.json",
