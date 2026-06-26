@@ -134,6 +134,8 @@ npm run build
 - Agent Store listing draft: [docs/service-listing.md](docs/service-listing.md)
 - DoraHacks submission draft: [docs/dorahacks-submission.md](docs/dorahacks-submission.md)
 - Demo video asset: [media/cap-sentinel-demo.mp4](media/cap-sentinel-demo.mp4)
+- Public repository: <https://github.com/2514636556/croo-cap-auditor>
+- Public demo video: <https://raw.githubusercontent.com/2514636556/croo-cap-auditor/main/media/cap-sentinel-demo.mp4>
 
 ## License
 

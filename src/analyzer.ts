@@ -140,7 +140,7 @@ function checkDemo(input: SubmissionInput): Finding {
 }
 
 function checkStoreListing(input: SubmissionInput): Finding {
-  const hasListing = Boolean(input.storeListingUrl);
+  const hasListing = Boolean(input.storeListingUrl) && !input.storeListingUrl?.toLowerCase().includes('pending');
   const mentionsPrice = containsAny(input.pricingModel, ['usdc', '$', 'price', 'paid', 'flat']);
   return finding({
     id: 'agent-store-listing',

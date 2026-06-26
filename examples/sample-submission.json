@@ -5,9 +5,9 @@
     "Developer Tooling Agents",
     "Data & Verification Agents"
   ],
-  "repoUrl": "https://github.com/YOUR_GITHUB_USERNAME/croo-cap-auditor",
-  "demoVideoUrl": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/croo-cap-auditor/main/media/cap-sentinel-demo.mp4",
-  "storeListingUrl": "https://agent.croo.network/REPLACE_WITH_LISTING",
+  "repoUrl": "https://github.com/2514636556/croo-cap-auditor",
+  "demoVideoUrl": "https://raw.githubusercontent.com/2514636556/croo-cap-auditor/main/media/cap-sentinel-demo.mp4",
+  "storeListingUrl": "https://agent.croo.network/pending-cap-sentinel-listing",
   "license": "MIT",
   "pricingModel": "Flat 2 USDC audit fee per CAP readiness report.",
   "deliveryFormat": "cap-sentinel.audit.v1 JSON schema delivered through CROO deliverOrder.",

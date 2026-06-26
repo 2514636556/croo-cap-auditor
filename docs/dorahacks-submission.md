@@ -45,18 +45,18 @@ The provider runtime uses `@croo-network/sdk`:
 
 ## Repository
 
-Replace after publishing: `https://github.com/YOUR_GITHUB_USERNAME/croo-cap-auditor`
+`https://github.com/2514636556/croo-cap-auditor`
 
 ## Demo Video
 
 Use the generated demo asset after publishing the repository, or upload it to YouTube/Loom:
 
 - Local file: `media/cap-sentinel-demo.mp4`
-- Replace after publishing: `https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/croo-cap-auditor/main/media/cap-sentinel-demo.mp4`
+- Public link: `https://raw.githubusercontent.com/2514636556/croo-cap-auditor/main/media/cap-sentinel-demo.mp4`
 
 ## Agent Store Listing
 
-Replace after listing: `https://agent.croo.network/REPLACE_WITH_LISTING`
+Pending wallet/Agent Store authorization: `https://agent.croo.network/pending-cap-sentinel-listing`
 
 ## License
 
