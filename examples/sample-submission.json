@@ -1,0 +1,41 @@
+{
+  "projectName": "CAP Sentinel",
+  "shortDescription": "A paid verification agent that audits CROO CAP hackathon submissions for integration readiness, Agent Store listing quality, anti-sybil evidence, and buyer-safe delivery.",
+  "tracks": [
+    "Developer Tooling Agents",
+    "Data & Verification Agents"
+  ],
+  "repoUrl": "https://github.com/YOUR_GITHUB_USERNAME/croo-cap-auditor",
+  "demoVideoUrl": "https://youtu.be/REPLACE_WITH_DEMO",
+  "storeListingUrl": "https://agent.croo.network/REPLACE_WITH_LISTING",
+  "license": "MIT",
+  "pricingModel": "Flat 2 USDC audit fee per CAP readiness report.",
+  "deliveryFormat": "cap-sentinel.audit.v1 JSON schema delivered through CROO deliverOrder.",
+  "sdkMethodsUsed": [
+    "AgentClient",
+    "connectWebSocket",
+    "acceptNegotiation",
+    "deliverOrder",
+    "EventType.NegotiationCreated",
+    "EventType.OrderPaid",
+    "DeliverableType.Schema"
+  ],
+  "capIntegrationNotes": "Provider mode listens on CROO_WS_URL with CROO_SDK_KEY, accepts valid negotiations, waits for EventType.OrderPaid, then calls deliverOrder with a deterministic audit report. The service uses CROO_API_URL, CROO_WS_URL, CROO_SDK_KEY, and optional BASE_RPC_URL.",
+  "buyerWalletEvidence": [
+    {
+      "label": "demo buyer wallet",
+      "value": "replace with wallet or tx evidence"
+    }
+  ],
+  "counterpartyAgentEvidence": [
+    {
+      "label": "demo counterparty agent",
+      "value": "replace with agent/service id"
+    }
+  ],
+  "sourceSnippets": [
+    "stream.on(EventType.NegotiationCreated, async (event) => { await client.acceptNegotiation(event.negotiation_id!) })",
+    "stream.on(EventType.OrderPaid, async (event) => { await client.deliverOrder(event.order_id!, { deliverableType: DeliverableType.Schema }) })"
+  ],
+  "readme": "Install with npm install. Configure .env from .env.example including CROO_SDK_KEY. Run npm run demo for local audit and npm run provider for CAP provider mode. Uses CAP AgentClient, connectWebSocket, acceptNegotiation, deliverOrder, and MIT license."
+}
